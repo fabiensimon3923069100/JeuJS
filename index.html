@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Dream Island</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />
+
+</head>
+
+<body onload="chrono();" onkeydown="touche(event);">
+
+
+<table id="latable">
+    <tr class="line">
+        <th id="00" class="cell"></th>
+        <th id="01" class="cell"></th>
+        <th id="02" class="cell"></th>
+        <th id="03" class="cell"></th>
+        <th id="04" class="cell"></th>
+        <th id="05" class="cell"></th>
+        <th id="06" class="cell"></th>
+        <th id="07" class="cell"></th>
+        <th id="08" class="cell"></th>
+        <th id="09" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="10" class="cell"></td>
+        <td id="11" class="cell"></td>
+        <td id="12" class="cell"></td>
+        <th id="13" class="cell"></th>
+        <th id="14" class="cell"></th>
+        <th id="15" class="cell"></th>
+        <th id="16" class="cell"></th>
+        <th id="17" class="cell"></th>
+        <th id="18" class="cell"></th>
+        <th id="19" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="20" class="cell"></td>
+        <td id="21" class="cell"></td>
+        <td id="22" class="cell"></td>
+        <th id="23" class="cell"></th>
+        <th id="24" class="cell"></th>
+        <th id="25" class="cell"></th>
+        <th id="26" class="cell"></th>
+        <th id="27" class="cell"></th>
+        <th id="28" class="cell"></th>
+        <th id="29" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="30" class="cell"></td>
+        <td id="31" class="cell"></td>
+        <td id="32" class="cell"></td>
+        <th id="33" class="cell"></th>
+        <th id="34" class="cell"></th>
+        <th id="35" class="cell"></th>
+        <th id="36" class="cell"></th>
+        <th id="37" class="cell"></th>
+        <th id="38" class="cell"></th>
+        <th id="39" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="40" class="cell"></td>
+        <td id="41" class="cell"></td>
+        <td id="42" class="cell"></td>
+        <th id="43" class="cell"></th>
+        <th id="44" class="cell"></th>
+        <th id="45" class="cell"></th>
+        <th id="46" class="cell"></th>
+        <th id="47" class="cell"></th>
+        <th id="48" class="cell"></th>
+        <th id="49" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="50" class="cell"></td>
+        <td id="51" class="cell"></td>
+        <td id="52" class="cell"></td>
+        <th id="53" class="cell"></th>
+        <th id="54" class="cell"></th>
+        <th id="55" class="cell"></th>
+        <th id="56" class="cell"></th>
+        <th id="57" class="cell"></th>
+        <th id="58" class="cell"></th>
+        <th id="59" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="60" class="cell"></td>
+        <td id="61" class="cell"></td>
+        <td id="62" class="cell"></td>
+        <th id="63" class="cell"></th>
+        <th id="64" class="cell"></th>
+        <th id="65" class="cell"></th>
+        <th id="66" class="cell"></th>
+        <th id="67" class="cell"></th>
+        <th id="68" class="cell"></th>
+        <th id="69" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="70" class="cell"></td>
+        <td id="71" class="cell"></td>
+        <td id="72" class="cell"></td>
+        <th id="73" class="cell"></th>
+        <th id="74" class="cell"></th>
+        <th id="75" class="cell"></th>
+        <th id="76" class="cell"></th>
+        <th id="77" class="cell"></th>
+        <th id="78" class="cell"></th>
+        <th id="79" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="80" class="cell"></td>
+        <td id="81" class="cell"></td>
+        <td id="82" class="cell"></td>
+        <th id="83" class="cell"></th>
+        <th id="84" class="cell"></th>
+        <th id="85" class="cell"></th>
+        <th id="86" class="cell"></th>
+        <th id="87" class="cell"></th>
+        <th id="88" class="cell"></th>
+        <th id="89" class="cell"></th>
+    </tr>
+    <tr class="line">
+        <td id="90" class="cell"></td>
+        <td id="91" class="cell"></td>
+        <td id="92" class="cell"></td>
+        <th id="93" class="cell"></th>
+        <th id="94" class="cell"></th>
+        <th id="95" class="cell"></th>
+        <th id="96" class="cell"></th>
+        <th id="97" class="cell"></th>
+        <th id="98" class="cell"></th>
+        <th id="99" class="cell"></th>
+    </tr>
+
+</table>
+
+<!--<div class="border" id="score">
+    SCORE
+    <div id="Compteur"></div>
+</div>
+-->
+
+
+<div id="chrono">
+    <table class="border">
+        <tr>
+            <th class="border">Minutes</th>
+            <th class="border">Secondes</th>
+            <th class="border">Dixiemes</th>
+        </tr>
+        <tr>
+            <th class="border"><div class="chronomarge" id="min"></div></th>
+            <th class="border"><div class="chronomarge" id="sec"></div></th>
+            <th class="border"><div class="chronomarge" id="dix"></div></th>
+        </tr>
+    </table>
+</div>
+
+<!--<div id="inventaire">
+    <table class="border">
+        <tr>
+            <th class="border cellinv"><div id="inv1"></div></th>
+            <th class="border cellinv"><div id="inv2"></div></th>
+            <th class="border cellinv"><div id="inv3"></div></th>
+            <th class="border cellinv"><div id="inv4"></div></th>
+            <th class="border cellinv"><div id="inv5"></div></th>
+            <th class="border cellinv"><div id="inv6"></div></th>
+        </tr>
+    </table>
+</div>-->
+
+<!--<div id="jouabilite">
+    <table class="border">
+        <tr>
+            <td class="border" colspan="2">Jouabilité</td>
+        </tr>
+        <tr>
+            <th class="border cell">Flèches directionnels</th>
+            <th class="border cell">Bouger sur la carte</th>
+        </tr>
+        <tr>
+            <th class="border cell">Touche I</th>
+            <th class="border cell">Inventaire</th>
+        </tr>
+        <tr>
+            <th class="border cell">Touche Entré</th>
+            <th class="border cell">Action</th>
+        </tr>
+    </table>
+</div>-->
+
+<div id="MainWindow">
+
+
+
+</div>
+
+
+
+
+</body>
+
+<script src="JS/script.js"></script>
+</html>

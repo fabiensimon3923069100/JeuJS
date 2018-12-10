@@ -1,0 +1,106 @@
+#MainWindow
+{
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+
+#latable
+{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.line
+{
+    width: 100%;
+}
+
+.cell
+{
+    width: 10%;
+    border: 1px solid black;
+    height: 50px;
+}
+
+
+#levelbox
+{
+    width: 10%;
+    margin-left: 45%;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+}
+
+#level,#Compteur
+{
+    margin-left: 5px;
+}
+
+
+#chrono
+{
+    display: flex;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+
+.chronomarge
+{
+    margin-left: 6px;
+}
+
+
+.border
+{
+    border: 1px solid black;
+}
+
+
+#score
+{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 30px;
+}
+
+
+#inventaire
+{
+    width: 50%;
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left:0;
+}
+
+#jouabilite
+{
+    width: 15%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.cellinv
+{
+    width: 20%;
+    border: 1px solid black;
+    height: 50px;
+}
+
